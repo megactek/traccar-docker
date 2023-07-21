@@ -24,6 +24,6 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - /path/to/letsencrypt:/etc/letsencrypt
-      - /path/to/appdata:/data
-      - /path/to/my_proxy.conf:/etc/nginx/conf.d/my_proxy.conf:ro
+      - /etc/letsencrypt/live/hbref.gq-0001/:/etc/letsencrypt
+      - ./appdata:/data
+      - ./nginx.conf:/etc/nginx/conf.d/my_proxy.conf:ro
