@@ -1,0 +1,5 @@
+# Base image with Apache HTTP Server
+FROM httpd:2.4
+
+# Copy your SSL certificates to the Apache container
+COPY ssl-certs/ /usr/local/apache2/conf/
