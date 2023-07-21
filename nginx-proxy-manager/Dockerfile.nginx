@@ -1,2 +1,0 @@
-# Base image with Nginx Proxy Manager
-FROM jc21/nginx-proxy-manager:latest
